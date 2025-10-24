@@ -1,0 +1,8 @@
+CREATE TABLE jugadores (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  nombre VARCHAR(50) NOT NULL,
+  apellidos VARCHAR(100) NOT NULL,
+  telefono VARCHAR(15),
+  email VARCHAR(100) UNIQUE,
+  fecha_alta DATE DEFAULT (CURRENT_DATE)
+);
